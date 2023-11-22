@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/BootROM/dpram64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dpram64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/BootROM/wb_mem_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_mem_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/BootROM/bootrom_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bootrom_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/SystemController/swervolf_syscon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module swervolf_syscon
+WARNING: [VRFC 10-3380] identifier 'Enables_Reg' is used before its declaration [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/SystemController/swervolf_syscon.v:220]
+WARNING: [VRFC 10-3380] identifier 'Digits_Reg' is used before its declaration [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/SystemController/swervolf_syscon.v:223]
+WARNING: [VRFC 10-3380] identifier 'Digits_Reg' is used before its declaration [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/SystemController/swervolf_syscon.v:224]
+WARNING: [VRFC 10-3380] identifier 'Digits_Reg' is used before its declaration [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/SystemController/swervolf_syscon.v:225]
+WARNING: [VRFC 10-3380] identifier 'Digits_Reg' is used before its declaration [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/SystemController/swervolf_syscon.v:226]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/SystemController/swervolf_syscon.v:295]
+INFO: [VRFC 10-311] analyzing module SevSegDisplays_Controller
+ERROR: [VRFC 10-1063] multiple packed dimensions are not allowed in this mode of verilog [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/SystemController/swervolf_syscon.v:319]
+ERROR: [VRFC 10-1063] multiple packed dimensions are not allowed in this mode of verilog [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/SystemController/swervolf_syscon.v:343]
+ERROR: [VRFC 10-2865] module 'SevSegDisplays_Controller' ignored due to previous errors [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/SystemController/swervolf_syscon.v:297]
+INFO: [VRFC 10-311] analyzing module SevenSegDecoder
+ERROR: [VRFC 10-2865] module 'SevenSegDecoder' ignored due to previous errors [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/SystemController/swervolf_syscon.v:370]
+INFO: [VRFC 10-311] analyzing module SevSegMux
+ERROR: [VRFC 10-2865] module 'SevSegMux' ignored due to previous errors [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/SystemController/swervolf_syscon.v:398]

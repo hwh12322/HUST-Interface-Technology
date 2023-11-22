@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/sim/swerv_soc_axi_gpio_0_0.vhd" \
+
+nosort

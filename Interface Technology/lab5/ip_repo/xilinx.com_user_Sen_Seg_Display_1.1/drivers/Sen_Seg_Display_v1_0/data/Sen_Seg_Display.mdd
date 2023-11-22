@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER Sen_Seg_Display
+	OPTION supported_peripherals = (Sen_Seg_Display);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = Sen_Seg_Display;
+END DRIVER

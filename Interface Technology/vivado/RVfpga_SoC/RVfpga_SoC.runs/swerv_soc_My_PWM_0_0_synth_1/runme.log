@@ -1,0 +1,431 @@
+
+*** Running vivado
+    with args -log swerv_soc_My_PWM_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source swerv_soc_My_PWM_0_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source swerv_soc_My_PWM_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/destop/vivado/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top swerv_soc_My_PWM_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15884 
+WARNING: [Synth 8-2611] redeclaration of ansi port slv_reg0 is not allowed [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ipshared/adfd/hdl/My_PWM_v1_0_S00_AXI.v:107]
+WARNING: [Synth 8-976] slv_reg0 has already been declared [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ipshared/adfd/hdl/My_PWM_v1_0_S00_AXI.v:107]
+WARNING: [Synth 8-2654] second declaration of slv_reg0 ignored [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ipshared/adfd/hdl/My_PWM_v1_0_S00_AXI.v:107]
+INFO: [Synth 8-994] slv_reg0 is declared here [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ipshared/adfd/hdl/My_PWM_v1_0_S00_AXI.v:18]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 870.352 ; gain = 242.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_My_PWM_0_0' [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_My_PWM_0_0/synth/swerv_soc_My_PWM_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'My_PWM_v1_0' [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ipshared/adfd/hdl/My_PWM_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'My_PWM_v1_0_S00_AXI' [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ipshared/adfd/hdl/My_PWM_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ipshared/adfd/hdl/My_PWM_v1_0_S00_AXI.v:231]
+INFO: [Synth 8-226] default block is never used [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ipshared/adfd/hdl/My_PWM_v1_0_S00_AXI.v:372]
+INFO: [Synth 8-6155] done synthesizing module 'My_PWM_v1_0_S00_AXI' (1#1) [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ipshared/adfd/hdl/My_PWM_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'My_Controller' [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ipshared/adfd/hdl/My_Controller.v:46]
+	Parameter state_top bound to: 12499999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'My_Controller' (2#1) [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ipshared/adfd/hdl/My_Controller.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'My_PWM_v1_0' (3#1) [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ipshared/adfd/hdl/My_PWM_v1_0.v:4]
+WARNING: [Synth 8-7023] instance 'inst' of module 'My_PWM_v1_0' has 24 connections declared, but only 23 given [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_My_PWM_0_0/synth/swerv_soc_My_PWM_0_0.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_My_PWM_0_0' (4#1) [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_My_PWM_0_0/synth/swerv_soc_My_PWM_0_0.v:57]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[31]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[30]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[29]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[28]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[27]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[26]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[25]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[24]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[23]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[22]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[21]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[20]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[19]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[18]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[17]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[16]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[15]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[14]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[13]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[12]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[11]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[10]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[9]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[8]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[7]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[6]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[5]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[4]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[3]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[2]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[1]
+WARNING: [Synth 8-3331] design My_PWM_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design My_PWM_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design My_PWM_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design My_PWM_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design My_PWM_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design My_PWM_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 917.480 ; gain = 289.410
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 928.652 ; gain = 300.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 928.652 ; gain = 300.582
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 928.652 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1050.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1051.926 ; gain = 1.758
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'cnt_top_reg' [d:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ipshared/adfd/hdl/My_Controller.v:86]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	  75 Input     21 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  75 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module My_PWM_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+Module My_Controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  75 Input     21 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  75 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[31]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[30]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[29]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[28]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[27]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[26]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[25]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[24]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[23]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[22]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[21]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[20]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[19]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[18]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[17]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[16]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[15]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[14]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[13]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[12]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[11]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[10]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[9]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[8]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[7]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[6]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[5]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[4]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[3]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[2]
+WARNING: [Synth 8-3331] design My_Controller has unconnected port enable[1]
+WARNING: [Synth 8-3331] design My_PWM_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design My_PWM_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design My_PWM_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design My_PWM_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design My_PWM_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design My_PWM_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3886] merging instance 'inst/My/cnt_top_reg[11]' (LD) to 'inst/My/cnt_top_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/My/cnt_top_reg[12]' (LD) to 'inst/My/cnt_top_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/My/cnt_top_reg[13]' (LD) to 'inst/My/cnt_top_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/My/cnt_top_reg[14]' (LD) to 'inst/My/cnt_top_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/My/cnt_top_reg[15]' (LD) to 'inst/My/cnt_top_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/My/cnt_top_reg[16]' (LD) to 'inst/My/cnt_top_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/My/cnt_top_reg[17]' (LD) to 'inst/My/cnt_top_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/My/cnt_top_reg[18]' (LD) to 'inst/My/cnt_top_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/My/cnt_top_reg[19]' (LD) to 'inst/My/cnt_top_reg[20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/My/cnt_top_reg[20] )
+INFO: [Synth 8-3886] merging instance 'inst/My_PWM_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/My_PWM_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/My_PWM_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/My_PWM_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/My_PWM_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/My_PWM_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/My/cnt_top_reg[20]) is unused and will be removed from module swerv_soc_My_PWM_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   171|
+|2     |LUT1   |    51|
+|3     |LUT2   |   304|
+|4     |LUT3   |   254|
+|5     |LUT4   |    66|
+|6     |LUT5   |    10|
+|7     |LUT6   |    91|
+|8     |MUXF7  |     1|
+|9     |FDCE   |    59|
+|10    |FDRE   |   169|
+|11    |FDSE   |     1|
+|12    |LD     |    11|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+--------------------+------+
+|      |Instance                     |Module              |Cells |
++------+-----------------------------+--------------------+------+
+|1     |top                          |                    |  1188|
+|2     |  inst                       |My_PWM_v1_0         |  1188|
+|3     |    My                       |My_Controller       |   957|
+|4     |    My_PWM_v1_0_S00_AXI_inst |My_PWM_v1_0_S00_AXI |   231|
++------+-----------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1051.926 ; gain = 423.855
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1051.926 ; gain = 300.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1051.926 ; gain = 423.855
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1051.926 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 183 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1053.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  LD => LDCE: 11 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 80 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1053.797 ; gain = 715.676
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1053.797 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.runs/swerv_soc_My_PWM_0_0_synth_1/swerv_soc_My_PWM_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP swerv_soc_My_PWM_0_0, cache-ID = bacec3665d66e68d
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1053.797 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.runs/swerv_soc_My_PWM_0_0_synth_1/swerv_soc_My_PWM_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file swerv_soc_My_PWM_0_0_utilization_synth.rpt -pb swerv_soc_My_PWM_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 21 02:39:48 2023...

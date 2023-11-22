@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="swerv_soc_Sen_Seg_Display_0_2_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1698935584">
+  <File Type="PA-TCL" Name="swerv_soc_Sen_Seg_Display_0_2.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="swerv_soc_Sen_Seg_Display_0_2_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="swerv_soc_Sen_Seg_Display_0_2_reports.tcl"/>
+  <File Type="RDS-RDS" Name="swerv_soc_Sen_Seg_Display_0_2.vds"/>
+  <File Type="RDS-UTIL" Name="swerv_soc_Sen_Seg_Display_0_2_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="swerv_soc_Sen_Seg_Display_0_2_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="swerv_soc_Sen_Seg_Display_0_2.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="swerv_soc_Sen_Seg_Display_0_2_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="swerv_soc_Sen_Seg_Display_0_2_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/swerv_soc_Sen_Seg_Display_0_2">
+    <File Path="$PSRCDIR/sources_1/bd/swerv_soc/ip/swerv_soc_Sen_Seg_Display_0_2/swerv_soc_Sen_Seg_Display_0_2.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="swerv_soc_Sen_Seg_Display_0_2"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/swerv_soc_Sen_Seg_Display_0_2">
+    <File Path="$PSRCDIR/sources_1/bd/swerv_soc/ip/swerv_soc_Sen_Seg_Display_0_2/swerv_soc_Sen_Seg_Display_0_2.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="swerv_soc_Sen_Seg_Display_0_2"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PPRDIR/../../Interface_lab_src/RVfpga_SoC-lab1/lab_src/script.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_1;WRITE_BITSTREAM;TCL.PRE"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,1875 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov  2 22:40:06 2023
+# Process ID: 15272
+# Current directory: D:/destop/Interface_lab/lab5/lab1.runs/synth_1
+# Command line: vivado.exe -log rvfpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rvfpga.tcl
+# Log file: D:/destop/Interface_lab/lab5/lab1.runs/synth_1/rvfpga.vds
+# Journal file: D:/destop/Interface_lab/lab5/lab1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source rvfpga.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/destop/Interface_lab/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top rvfpga -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17032 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 874.555 ; gain = 235.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rvfpga' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.sv:26]
+	Parameter RAM_SIZE bound to: 65536 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_gen_nexys' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/clk_gen_nexys.v:24]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_BASE' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61495]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 16 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 32 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_BASE' (1#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61495]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen_nexys' (2#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/clk_gen_nexys.v:24]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/axi_intf.sv:20]
+	Parameter AXI_ADDR_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter AXI_DATA_WIDTH bound to: 32'b00000000000000000000000001000000 
+	Parameter AXI_ID_WIDTH bound to: 32'b00000000000000000000000000000110 
+	Parameter AXI_USER_WIDTH bound to: 32'b00000000000000000000000000000001 
+	Parameter AXI_STRB_WIDTH bound to: 32'b00000000000000000000000000001000 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (2#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/axi_intf.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/axi_intf.sv:20]
+	Parameter AXI_ADDR_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter AXI_DATA_WIDTH bound to: 32'b00000000000000000000000001000000 
+	Parameter AXI_ID_WIDTH bound to: 32'b00000000000000000000000000000110 
+	Parameter AXI_USER_WIDTH bound to: 32'b00000000000000000000000000000001 
+	Parameter AXI_STRB_WIDTH bound to: 32'b00000000000000000000000000001000 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (2#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/axi_intf.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'axi_cdc_intf' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/axi_cdc.sv:133]
+	Parameter AXI_ID_WIDTH bound to: 32'b00000000000000000000000000000110 
+	Parameter AXI_ADDR_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter AXI_DATA_WIDTH bound to: 32'b00000000000000000000000001000000 
+	Parameter AXI_USER_WIDTH bound to: 32'b00000000000000000000000000000001 
+	Parameter LOG_DEPTH bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-6157] synthesizing module 'axi_cdc' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/axi_cdc.sv:23]
+	Parameter LogDepth bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:81]
+	Parameter WIDTH bound to: 32'b00000000000000000000000001001010 
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_src' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:151]
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrWidth bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrFull bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'sync' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/sync.sv:15]
+	Parameter STAGES bound to: 32'b00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'sync' (3#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/sync.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'gray_to_binary' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/gray_to_binary.sv:15]
+	Parameter N bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'gray_to_binary' (4#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/gray_to_binary.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'binary_to_gray' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/binary_to_gray.sv:15]
+	Parameter N bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'binary_to_gray' (5#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/binary_to_gray.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_src' (6#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:151]
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_dst' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:209]
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrWidth bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrEmpty bound to: 2'b00 
+INFO: [Synth 8-6157] synthesizing module 'spill_register' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register' (7#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_dst' (8#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:209]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray' (9#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:81]
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray__parameterized0' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:81]
+	Parameter WIDTH bound to: 32'b00000000000000000000000000001001 
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_src__parameterized0' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:151]
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrWidth bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrFull bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_src__parameterized0' (9#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:151]
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_dst__parameterized0' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:209]
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrWidth bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrEmpty bound to: 2'b00 
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized0' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized0' (9#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_dst__parameterized0' (9#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:209]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray__parameterized0' (9#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:81]
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray__parameterized1' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:81]
+	Parameter WIDTH bound to: 32'b00000000000000000000000001000100 
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_src__parameterized1' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:151]
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrWidth bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrFull bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_src__parameterized1' (9#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:151]
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_dst__parameterized1' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:209]
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrWidth bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrEmpty bound to: 2'b00 
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized1' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized1' (9#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_dst__parameterized1' (9#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:209]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray__parameterized1' (9#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/cdc_fifo_gray.sv:81]
+INFO: [Synth 8-6155] done synthesizing module 'axi_cdc' (10#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/axi_cdc.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'axi_cdc_intf' (11#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/axi_cdc.sv:133]
+INFO: [Synth 8-6157] synthesizing module 'litedram_top' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_top.v:27]
+	Parameter ID_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'litedram_core' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:4]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:962]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:965]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:967]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1044]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1047]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1049]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1126]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1129]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1131]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1208]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1211]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1213]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1290]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1293]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1295]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1372]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1375]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1377]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1454]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1457]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1459]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1536]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1539]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1541]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1591]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1593]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1595]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:1598]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2519]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2519]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2520]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2520]
+INFO: [Synth 8-3876] $readmem data file 'litedram_core.init' is read successfully [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16699]
+INFO: [Synth 8-3876] $readmem data file 'mem_1.init' is read successfully [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16719]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15886]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15955]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16023]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16171]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (12#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16776]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35014]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (13#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35014]
+WARNING: [Synth 8-7023] instance 'IDELAYCTRL' of module 'IDELAYCTRL' has 3 connections declared, but only 2 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16776]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:50288]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: BUF - type: string 
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (14#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:50288]
+WARNING: [Synth 8-7023] instance 'OSERDESE2' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16787]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46225]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (15#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46225]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_1' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_2' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_3' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_4' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_5' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_6' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_7' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16947]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_8' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16969]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_9' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16991]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_10' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17013]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_11' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17035]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_12' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17057]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_13' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17079]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_14' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17101]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_15' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17123]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_16' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17145]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_17' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17167]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_18' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17189]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_19' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17211]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_20' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17233]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_21' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17255]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_22' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17277]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_23' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17299]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_24' of module 'OSERDESE2' has 27 connections declared, but only 17 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17321]
+INFO: [Synth 8-6157] synthesizing module 'IOBUFDS' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36213]
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUFDS' (16#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36213]
+WARNING: [Synth 8-7023] instance 'IOBUFDS' of module 'IOBUFDS' has 5 connections declared, but only 4 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17341]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_25' of module 'OSERDESE2' has 27 connections declared, but only 17 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17354]
+WARNING: [Synth 8-7023] instance 'IOBUFDS_1' of module 'IOBUFDS' has 5 connections declared, but only 4 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17374]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_26' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17387]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_27' of module 'OSERDESE2' has 27 connections declared, but only 13 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17409]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_28' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17431]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:38572]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2' (17#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:38572]
+WARNING: [Synth 8-7023] instance 'ISERDESE2' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17457]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IDELAY_TYPE bound to: VARIABLE - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (18#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027]
+WARNING: [Synth 8-7023] instance 'IDELAYE2' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17484]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (19#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_29' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17507]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_1' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17533]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_1' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17560]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_30' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17583]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_2' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17609]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_2' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17636]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_31' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17659]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_3' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17685]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_3' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17712]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_32' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17735]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_4' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17761]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_4' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17788]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_33' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17811]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_5' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17837]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_5' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17864]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_34' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17887]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_6' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17913]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_6' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17940]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_35' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17963]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_7' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:17989]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_7' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18016]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_36' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18039]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_8' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18065]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_8' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18092]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_37' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18115]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_9' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18141]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_9' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18168]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_38' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18191]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_10' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18217]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_10' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18244]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_39' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18267]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_11' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18293]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_11' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18320]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_40' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18343]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_12' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18369]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_12' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18396]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_41' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18419]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_13' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18445]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_13' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18472]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_42' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18495]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_14' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18521]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_14' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18548]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_43' of module 'OSERDESE2' has 27 connections declared, but only 16 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18571]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_15' of module 'ISERDESE2' has 28 connections declared, but only 15 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18597]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_15' of module 'IDELAYE2' has 12 connections declared, but only 7 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18624]
+INFO: [Synth 8-6157] synthesizing module 'serv_rf_top' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_top.v:3]
+	Parameter RESET_PC bound to: 1'b0 
+	Parameter WITH_CSR bound to: 1 - type: integer 
+	Parameter RF_WIDTH bound to: 2 - type: integer 
+	Parameter RF_L2D bound to: 10 - type: integer 
+	Parameter CSR_REGS bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'serv_rf_ram_if' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram_if.v:2]
+	Parameter width bound to: 2 - type: integer 
+	Parameter csr_regs bound to: 4 - type: integer 
+	Parameter depth bound to: 576 - type: integer 
+	Parameter l2w bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_rf_ram_if' (20#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram_if.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_rf_ram' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram.v:1]
+	Parameter width bound to: 2 - type: integer 
+	Parameter csr_regs bound to: 4 - type: integer 
+	Parameter depth bound to: 576 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_rf_ram' (21#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram.v:1]
+INFO: [Synth 8-6157] synthesizing module 'serv_top' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_top.v:3]
+	Parameter WITH_CSR bound to: 1 - type: integer 
+	Parameter RESET_PC bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'serv_csr' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_csr.v:2]
+	Parameter CSR_SOURCE_CSR bound to: 2'b00 
+	Parameter CSR_SOURCE_EXT bound to: 2'b01 
+	Parameter CSR_SOURCE_SET bound to: 2'b10 
+	Parameter CSR_SOURCE_CLR bound to: 2'b11 
+	Parameter CSR_MSCRATCH bound to: 2'b00 
+	Parameter CSR_MTVEC bound to: 2'b01 
+	Parameter CSR_MEPC bound to: 2'b10 
+	Parameter CSR_MTVAL bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'serv_csr' (22#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_csr.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_state' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_state.v:1]
+	Parameter WITH_CSR bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_state' (23#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_state.v:1]
+INFO: [Synth 8-6157] synthesizing module 'serv_decode' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_decode.v:2]
+	Parameter CSR_SOURCE_CSR bound to: 2'b00 
+	Parameter CSR_SOURCE_EXT bound to: 2'b01 
+	Parameter CSR_SOURCE_SET bound to: 2'b10 
+	Parameter CSR_SOURCE_CLR bound to: 2'b11 
+	Parameter CSR_MSCRATCH bound to: 2'b00 
+	Parameter CSR_MTVEC bound to: 2'b01 
+	Parameter CSR_MEPC bound to: 2'b10 
+	Parameter CSR_MTVAL bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'serv_decode' (24#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_decode.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_bufreg' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_bufreg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'serv_bufreg' (25#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_bufreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'serv_ctrl' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_ctrl.v:2]
+	Parameter RESET_PC bound to: 1'b0 
+	Parameter WITH_CSR bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_ctrl' (26#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_ctrl.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_alu' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_alu.v:2]
+	Parameter BOOL_LUT bound to: 16'b1000111010010110 
+INFO: [Synth 8-6157] synthesizing module 'serv_shift' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_shift.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'serv_shift' (27#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_shift.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'serv_alu' (28#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_rf_if' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_if.v:2]
+	Parameter WITH_CSR bound to: 1 - type: integer 
+	Parameter CSR_SOURCE_CSR bound to: 2'b00 
+	Parameter CSR_SOURCE_EXT bound to: 2'b01 
+	Parameter CSR_SOURCE_SET bound to: 2'b10 
+	Parameter CSR_SOURCE_CLR bound to: 2'b11 
+	Parameter CSR_MSCRATCH bound to: 2'b00 
+	Parameter CSR_MTVEC bound to: 2'b01 
+	Parameter CSR_MEPC bound to: 2'b10 
+	Parameter CSR_MTVAL bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'serv_rf_if' (29#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_if.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_mem_if' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_mem_if.v:2]
+	Parameter WITH_CSR bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_mem_if' (30#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_mem_if.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'serv_top' (31#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_top.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'serv_rf_top' (32#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FD' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13467]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FD' (33#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13467]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 16 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 16 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 90.000000 - type: double 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (34#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416]
+WARNING: [Synth 8-7023] instance 'PLLE2_ADV' of module 'PLLE2_ADV' has 21 connections declared, but only 9 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18920]
+INFO: [Synth 8-6157] synthesizing module 'FDPE' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13648]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_PRE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDPE' (35#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13648]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine0_cmd_buffer_source_first_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14657]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine0_cmd_buffer_source_last_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14658]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine1_cmd_buffer_source_first_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14703]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine1_cmd_buffer_source_last_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14704]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine2_cmd_buffer_source_first_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14749]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine2_cmd_buffer_source_last_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14750]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine3_cmd_buffer_source_first_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14795]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine3_cmd_buffer_source_last_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14796]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine4_cmd_buffer_source_first_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14841]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine4_cmd_buffer_source_last_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14842]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine5_cmd_buffer_source_first_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14887]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine5_cmd_buffer_source_last_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14888]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine6_cmd_buffer_source_first_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14933]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine6_cmd_buffer_source_last_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14934]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine7_cmd_buffer_source_first_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14979]
+WARNING: [Synth 8-6014] Unused sequential element sdram_bankmachine7_cmd_buffer_source_last_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:14980]
+WARNING: [Synth 8-6014] Unused sequential element write_aw_buffer_source_first_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15680]
+WARNING: [Synth 8-6014] Unused sequential element write_aw_buffer_source_last_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15681]
+WARNING: [Synth 8-6014] Unused sequential element write_aw_buffer_source_payload_lock_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15686]
+WARNING: [Synth 8-6014] Unused sequential element write_aw_buffer_source_payload_prot_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15687]
+WARNING: [Synth 8-6014] Unused sequential element write_aw_buffer_source_payload_cache_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15688]
+WARNING: [Synth 8-6014] Unused sequential element write_aw_buffer_source_payload_qos_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15689]
+WARNING: [Synth 8-6014] Unused sequential element read_ar_buffer_source_first_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15771]
+WARNING: [Synth 8-6014] Unused sequential element read_ar_buffer_source_last_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15772]
+WARNING: [Synth 8-6014] Unused sequential element read_ar_buffer_source_payload_lock_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15777]
+WARNING: [Synth 8-6014] Unused sequential element read_ar_buffer_source_payload_prot_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15778]
+WARNING: [Synth 8-6014] Unused sequential element read_ar_buffer_source_payload_cache_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15779]
+WARNING: [Synth 8-6014] Unused sequential element read_ar_buffer_source_payload_qos_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15780]
+WARNING: [Synth 8-6014] Unused sequential element soccontroller_scratch_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15932]
+WARNING: [Synth 8-6014] Unused sequential element soccontroller_bus_errors_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15933]
+WARNING: [Synth 8-6014] Unused sequential element init_done_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15948]
+WARNING: [Synth 8-6014] Unused sequential element init_error_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:15952]
+WARNING: [Synth 8-6014] Unused sequential element a7ddrphy_rst_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16000]
+WARNING: [Synth 8-6014] Unused sequential element a7ddrphy_half_sys8x_taps_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16004]
+WARNING: [Synth 8-6014] Unused sequential element a7ddrphy_wlevel_en_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16008]
+WARNING: [Synth 8-6014] Unused sequential element a7ddrphy_dly_sel_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16012]
+WARNING: [Synth 8-6014] Unused sequential element a7ddrphy_rdphase_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16016]
+WARNING: [Synth 8-6014] Unused sequential element a7ddrphy_wrphase_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16020]
+WARNING: [Synth 8-6014] Unused sequential element sdram_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16110]
+WARNING: [Synth 8-6014] Unused sequential element sdram_phaseinjector0_command_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16114]
+WARNING: [Synth 8-6014] Unused sequential element sdram_phaseinjector0_address_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16121]
+WARNING: [Synth 8-6014] Unused sequential element sdram_phaseinjector0_baddress_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16125]
+WARNING: [Synth 8-6014] Unused sequential element sdram_phaseinjector0_wrdata_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16138]
+WARNING: [Synth 8-6014] Unused sequential element sdram_phaseinjector0_rddata_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16139]
+WARNING: [Synth 8-6014] Unused sequential element sdram_phaseinjector1_command_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16143]
+WARNING: [Synth 8-6014] Unused sequential element sdram_phaseinjector1_address_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16150]
+WARNING: [Synth 8-6014] Unused sequential element sdram_phaseinjector1_baddress_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16154]
+WARNING: [Synth 8-6014] Unused sequential element sdram_phaseinjector1_wrdata_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16167]
+WARNING: [Synth 8-6014] Unused sequential element sdram_phaseinjector1_rddata_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16168]
+WARNING: [Synth 8-6014] Unused sequential element timer_load_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16237]
+WARNING: [Synth 8-6014] Unused sequential element timer_reload_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16250]
+WARNING: [Synth 8-6014] Unused sequential element timer_en_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16254]
+WARNING: [Synth 8-6014] Unused sequential element timer_value_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16259]
+WARNING: [Synth 8-6014] Unused sequential element timer_status_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16260]
+WARNING: [Synth 8-6014] Unused sequential element timer_enable_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16268]
+WARNING: [Synth 8-6014] Unused sequential element uart_txfull_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16298]
+WARNING: [Synth 8-6014] Unused sequential element uart_rxempty_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16299]
+WARNING: [Synth 8-6014] Unused sequential element uart_status_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16300]
+WARNING: [Synth 8-6014] Unused sequential element uart_enable_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16308]
+WARNING: [Synth 8-6014] Unused sequential element uart_txempty_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16309]
+WARNING: [Synth 8-6014] Unused sequential element uart_rxfull_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16310]
+WARNING: [Synth 8-6014] Unused sequential element uart_phy_re_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16340]
+WARNING: [Synth 8-6014] Unused sequential element memdat_1_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16728]
+WARNING: [Synth 8-6014] Unused sequential element memdat_3_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16745]
+WARNING: [Synth 8-6014] Unused sequential element memdat_5_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18646]
+WARNING: [Synth 8-6014] Unused sequential element memdat_6_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18660]
+WARNING: [Synth 8-6014] Unused sequential element memdat_7_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18674]
+WARNING: [Synth 8-6014] Unused sequential element memdat_8_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18688]
+WARNING: [Synth 8-6014] Unused sequential element memdat_9_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18702]
+WARNING: [Synth 8-6014] Unused sequential element memdat_10_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18716]
+WARNING: [Synth 8-6014] Unused sequential element memdat_11_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18730]
+WARNING: [Synth 8-6014] Unused sequential element memdat_12_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18744]
+WARNING: [Synth 8-6014] Unused sequential element memdat_13_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18769]
+WARNING: [Synth 8-6014] Unused sequential element memdat_15_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18785]
+WARNING: [Synth 8-6014] Unused sequential element memdat_16_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18799]
+WARNING: [Synth 8-6014] Unused sequential element memdat_17_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18814]
+WARNING: [Synth 8-6014] Unused sequential element memdat_19_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18830]
+INFO: [Synth 8-4471] merging register 'memadr_3_reg[0:0]' into 'memadr_2_reg[0:0]' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18947]
+INFO: [Synth 8-4471] merging register 'memadr_4_reg[0:0]' into 'memadr_2_reg[0:0]' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18957]
+INFO: [Synth 8-4471] merging register 'memadr_5_reg[0:0]' into 'memadr_2_reg[0:0]' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18967]
+INFO: [Synth 8-4471] merging register 'memadr_6_reg[0:0]' into 'memadr_2_reg[0:0]' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18977]
+INFO: [Synth 8-4471] merging register 'memadr_7_reg[0:0]' into 'memadr_2_reg[0:0]' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18987]
+INFO: [Synth 8-4471] merging register 'memadr_8_reg[0:0]' into 'memadr_2_reg[0:0]' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18997]
+INFO: [Synth 8-4471] merging register 'memadr_9_reg[0:0]' into 'memadr_2_reg[0:0]' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:19007]
+WARNING: [Synth 8-6014] Unused sequential element memadr_3_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18947]
+WARNING: [Synth 8-6014] Unused sequential element memadr_4_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18957]
+WARNING: [Synth 8-6014] Unused sequential element memadr_5_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18967]
+WARNING: [Synth 8-6014] Unused sequential element memadr_6_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18977]
+WARNING: [Synth 8-6014] Unused sequential element memadr_7_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18987]
+WARNING: [Synth 8-6014] Unused sequential element memadr_8_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18997]
+WARNING: [Synth 8-6014] Unused sequential element memadr_9_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:19007]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip142_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2839]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip132_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2837]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip122_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2835]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip112_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2833]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip102_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2831]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip92_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2829]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip82_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2827]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip72_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2825]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip62_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2823]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip52_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2821]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip42_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2819]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip32_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2817]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip22_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2815]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip14_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2813]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip04_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2811]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip152_reg' and it is trimmed from '8' to '4' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2841]
+INFO: [Synth 8-4471] merging register 'memadr_1_reg[0:0]' into 'memadr_2_reg[0:0]' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18758]
+INFO: [Synth 8-4471] merging register 'sdram_dfi_p1_cs_n_reg' into 'sdram_dfi_p0_cs_n_reg' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:4323]
+WARNING: [Synth 8-6014] Unused sequential element sdram_dfi_p1_cs_n_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:4323]
+WARNING: [Synth 8-6014] Unused sequential element memadr_1_reg was removed.  [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18758]
+INFO: [Synth 8-6155] done synthesizing module 'litedram_core' (36#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'litedram_top' (37#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_top.v:27]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.sv:172]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:78135]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (38#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:78135]
+INFO: [Synth 8-6157] synthesizing module 'bscan_tap' [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/bscan_tap.sv:16]
+	Parameter AWIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BSCANE2' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:876]
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BSCANE2' (39#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:876]
+INFO: [Synth 8-6157] synthesizing module 'BSCANE2__parameterized0' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:876]
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BSCANE2__parameterized0' (39#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:876]
+INFO: [Synth 8-6157] synthesizing module 'BSCANE2__parameterized1' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:876]
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BSCANE2__parameterized1' (39#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:876]
+INFO: [Synth 8-6155] done synthesizing module 'bscan_tap' (40#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/bscan_tap.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_wrapper' [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc' [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:855]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_PWM_w_Int_0_1' [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_PWM_w_Int_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_PWM_w_Int_0_1' (41#1) [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_PWM_w_Int_0_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'PWM_w_Int_0' of module 'swerv_soc_PWM_w_Int_0_1' has 25 connections declared, but only 22 given [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:1314]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_Sen_Seg_Display_0_2' [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_Sen_Seg_Display_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_Sen_Seg_Display_0_2' (42#1) [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_Sen_Seg_Display_0_2_stub.v:6]
+WARNING: [Synth 8-7023] instance 'Sen_Seg_Display_0' of module 'swerv_soc_Sen_Seg_Display_0_2' has 24 connections declared, but only 23 given [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:1337]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_axi2wb_intcon_wrapper_0_0' [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_axi2wb_intcon_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_axi2wb_intcon_wrapper_0_0' (43#1) [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_axi2wb_intcon_wrapper_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi2wb_intcon_wrapper_0' of module 'swerv_soc_axi2wb_intcon_wrapper_0_0' has 253 connections declared, but only 225 given [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:1361]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_axi_gpio_0_0' [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_axi_gpio_0_0' (44#1) [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_axi_interconnect_0_0' [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:1878]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1XYL15O' [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1XYL15O' (45#1) [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_C58QX0' [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_C58QX0' (46#1) [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:144]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_11W3T2L' [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:290]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_11W3T2L' (47#1) [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:290]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_RRH9HC' [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:436]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_auto_ds_0' [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_auto_ds_0' (48#1) [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_auto_pc_0' [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_auto_pc_0' (49#1) [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_RRH9HC' (50#1) [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:436]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_xbar_0' [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_xbar_0' (51#1) [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_axi_interconnect_0_0' (52#1) [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:1878]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_bootrom_wrapper_0_0' [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_bootrom_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_bootrom_wrapper_0_0' (53#1) [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_bootrom_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_swerv_wrapper_verilog_0_0' [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_swerv_wrapper_verilog_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_swerv_wrapper_verilog_0_0' (54#1) [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_swerv_wrapper_verilog_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_syscon_wrapper_0_0' [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_syscon_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_syscon_wrapper_0_0' (55#1) [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_syscon_wrapper_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'syscon_wrapper_0' of module 'swerv_soc_syscon_wrapper_0_0' has 21 connections declared, but only 17 given [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:1834]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_wb_gpio_wrapper_0_0' [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_wb_gpio_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_wb_gpio_wrapper_0_0' (56#1) [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_wb_gpio_wrapper_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'wb_gpio_wrapper_0' of module 'swerv_soc_wb_gpio_wrapper_0_0' has 13 connections declared, but only 10 given [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:1852]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_wb_uart_wrapper_0_0' [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_wb_uart_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_wb_uart_wrapper_0_0' (57#1) [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/.Xil/Vivado-15272-shiratama/realtime/swerv_soc_wb_uart_wrapper_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'wb_uart_wrapper_0' of module 'swerv_soc_wb_uart_wrapper_0_0' has 13 connections declared, but only 12 given [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:1863]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc' (58#1) [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v:855]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_wrapper' (59#1) [D:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v:12]
+WARNING: [Synth 8-7023] instance 'swervolf' of module 'swerv_soc_wrapper' has 58 connections declared, but only 57 given [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.sv:204]
+WARNING: [Synth 8-3848] Net o_flash_cs_n in module/entity rvfpga does not have driver. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.sv:43]
+WARNING: [Synth 8-3848] Net o_flash_mosi in module/entity rvfpga does not have driver. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.sv:44]
+WARNING: [Synth 8-3848] Net o_accel_cs_n in module/entity rvfpga does not have driver. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.sv:53]
+WARNING: [Synth 8-3848] Net o_accel_mosi in module/entity rvfpga does not have driver. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.sv:54]
+WARNING: [Synth 8-3848] Net accel_sclk in module/entity rvfpga does not have driver. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.sv:56]
+WARNING: [Synth 8-3848] Net flash_sclk in module/entity rvfpga does not have driver. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.sv:170]
+INFO: [Synth 8-6155] done synthesizing module 'rvfpga' (60#1) [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.sv:26]
+WARNING: [Synth 8-3331] design s00_couplers_imp_RRH9HC has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_RRH9HC has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_11W3T2L has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_11W3T2L has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_11W3T2L has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_11W3T2L has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_C58QX0 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_C58QX0 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_C58QX0 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_C58QX0 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1XYL15O has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1XYL15O has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1XYL15O has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1XYL15O has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design serv_alu has unconnected port i_rst
+WARNING: [Synth 8-3331] design serv_ctrl has unconnected port i_cnt_done
+WARNING: [Synth 8-3331] design serv_top has unconnected port i_ibus_rdt[1]
+WARNING: [Synth 8-3331] design serv_top has unconnected port i_ibus_rdt[0]
+WARNING: [Synth 8-3331] design rvfpga has unconnected port o_flash_cs_n
+WARNING: [Synth 8-3331] design rvfpga has unconnected port o_flash_mosi
+WARNING: [Synth 8-3331] design rvfpga has unconnected port o_accel_cs_n
+WARNING: [Synth 8-3331] design rvfpga has unconnected port o_accel_mosi
+WARNING: [Synth 8-3331] design rvfpga has unconnected port accel_sclk
+WARNING: [Synth 8-3331] design rvfpga has unconnected port i_flash_miso
+WARNING: [Synth 8-3331] design rvfpga has unconnected port i_accel_miso
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.707 ; gain = 377.266
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1016.707 ; gain = 377.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1016.707 ; gain = 377.266
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.171 . Memory (MB): peak = 1016.707 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/swerv_soc_wb_gpio_wrapper_0_0/swerv_soc_wb_gpio_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/wb_gpio_wrapper_0'
+Finished Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/swerv_soc_wb_gpio_wrapper_0_0/swerv_soc_wb_gpio_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/wb_gpio_wrapper_0'
+Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_swerv_wrapper_verilog_0_0/swerv_soc_swerv_wrapper_verilog_0_0/swerv_soc_swerv_wrapper_verilog_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/swerv_wrapper_verilog_0'
+Finished Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_swerv_wrapper_verilog_0_0/swerv_soc_swerv_wrapper_verilog_0_0/swerv_soc_swerv_wrapper_verilog_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/swerv_wrapper_verilog_0'
+Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_axi2wb_intcon_wrapper_0_0/swerv_soc_axi2wb_intcon_wrapper_0_0/swerv_soc_axi2wb_intcon_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi2wb_intcon_wrapper_0'
+Finished Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_axi2wb_intcon_wrapper_0_0/swerv_soc_axi2wb_intcon_wrapper_0_0/swerv_soc_axi2wb_intcon_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi2wb_intcon_wrapper_0'
+Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_bootrom_wrapper_0_0/swerv_soc_bootrom_wrapper_0_0/swerv_soc_bootrom_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/bootrom_wrapper_0'
+Finished Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_bootrom_wrapper_0_0/swerv_soc_bootrom_wrapper_0_0/swerv_soc_bootrom_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/bootrom_wrapper_0'
+Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/syscon_wrapper_0'
+Finished Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/syscon_wrapper_0'
+Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_gpio_0'
+Finished Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_gpio_0'
+Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_wb_uart_wrapper_0_0/swerv_soc_wb_uart_wrapper_0_0/swerv_soc_wb_uart_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/wb_uart_wrapper_0'
+Finished Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_wb_uart_wrapper_0_0/swerv_soc_wb_uart_wrapper_0_0/swerv_soc_wb_uart_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/wb_uart_wrapper_0'
+Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_xbar_0/swerv_soc_xbar_0/swerv_soc_xbar_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_xbar_0/swerv_soc_xbar_0/swerv_soc_xbar_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_interconnect_0/xbar'
+Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_PWM_w_Int_0_1/swerv_soc_PWM_w_Int_0_1/swerv_soc_PWM_w_Int_0_1_in_context.xdc] for cell 'swervolf/swerv_soc_i/PWM_w_Int_0'
+Finished Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_PWM_w_Int_0_1/swerv_soc_PWM_w_Int_0_1/swerv_soc_PWM_w_Int_0_1_in_context.xdc] for cell 'swervolf/swerv_soc_i/PWM_w_Int_0'
+Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_Sen_Seg_Display_0_2/swerv_soc_Sen_Seg_Display_0_2/swerv_soc_Sen_Seg_Display_0_2_in_context.xdc] for cell 'swervolf/swerv_soc_i/Sen_Seg_Display_0'
+Finished Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_Sen_Seg_Display_0_2/swerv_soc_Sen_Seg_Display_0_2/swerv_soc_Sen_Seg_Display_0_2_in_context.xdc] for cell 'swervolf/swerv_soc_i/Sen_Seg_Display_0'
+Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds'
+Finished Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds'
+Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [d:/destop/Interface_lab/lab5/lab1.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/liteDRAM.xdc]
+Finished Parsing XDC File [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/liteDRAM.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/liteDRAM.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rvfpga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rvfpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.xdc]
+Finished Parsing XDC File [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rvfpga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rvfpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/destop/Interface_lab/lab5/lab1.runs/synth_1/dont_touch.xdc]
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1136.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  FD => FDRE: 8 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1136.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1136.379 ; gain = 496.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1136.379 ; gain = 496.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i/wb_gpio_wrapper_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i/swerv_wrapper_verilog_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i/axi2wb_intcon_wrapper_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i/bootrom_wrapper_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i/syscon_wrapper_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i/wb_uart_wrapper_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i/PWM_w_Int_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i/Sen_Seg_Display_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1136.379 ; gain = 496.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:5869]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:7729]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:8349]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:8969]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:9589]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:7109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:6489]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:5249]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:11815]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:11729]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:11615]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2712]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:2673]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:11712]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:11673]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:11873]
+INFO: [Synth 8-5544] ROM "sdram_cmd_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sdram_choose_req_want_reads" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sdram_choose_req_want_writes" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sdram_choose_cmd_cmd_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'subfragments_refresher_state_reg' in module 'litedram_core'
+INFO: [Synth 8-802] inferred FSM for state register 'litedramcore_state_reg' in module 'litedram_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+*
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'subfragments_refresher_state_reg' using encoding 'one-hot' in module 'litedram_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+*
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'litedramcore_state_reg' using encoding 'one-hot' in module 'litedram_core'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1136.379 ; gain = 496.938
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 3     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 20    
+	   2 Input      4 Bit       Adders := 49    
+	   2 Input      3 Bit       Adders := 38    
+	   2 Input      2 Bit       Adders := 19    
+	   3 Input      2 Bit       Adders := 5     
+	   2 Input      1 Bit       Adders := 2     
++---XORs : 
+	   2 Input      2 Bit         XORs := 20    
+	   2 Input      1 Bit         XORs := 3     
++---XORs : 
+	                2 Bit    Wide XORs := 20    
++---Registers : 
+	               80 Bit    Registers := 1     
+	               74 Bit    Registers := 13    
+	               68 Bit    Registers := 4     
+	               41 Bit    Registers := 2     
+	               32 Bit    Registers := 18    
+	               27 Bit    Registers := 2     
+	               21 Bit    Registers := 8     
+	               16 Bit    Registers := 36    
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 13    
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 13    
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 29    
+	                4 Bit    Registers := 41    
+	                3 Bit    Registers := 55    
+	                2 Bit    Registers := 49    
+	                1 Bit    Registers := 204   
++---RAMs : 
+	              64K Bit         RAMs := 1     
+	               1K Bit         RAMs := 3     
+	              384 Bit         RAMs := 8     
+	              160 Bit         RAMs := 3     
+	              128 Bit         RAMs := 2     
+	               62 Bit         RAMs := 1     
+	               16 Bit         RAMs := 8     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     74 Bit        Muxes := 6     
+	   2 Input     68 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     41 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 19    
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 8     
+	   2 Input     14 Bit        Muxes := 1     
+	   3 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 11    
+	   4 Input     13 Bit        Muxes := 2     
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 7     
+	   4 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 9     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 8     
+	   3 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 20    
+	   2 Input      3 Bit        Muxes := 15    
+	   6 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 22    
+	   3 Input      2 Bit        Muxes := 8     
+	   6 Input      2 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 236   
+	   4 Input      1 Bit        Muxes := 17    
+	  11 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 104   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_gen_nexys 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module gray_to_binary 
+Detailed RTL Component Info : 
++---XORs : 
+	                2 Bit    Wide XORs := 1     
+Module binary_to_gray 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
+Module sync 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module cdc_fifo_gray_src 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
++---Registers : 
+	               74 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+Module spill_register 
+Detailed RTL Component Info : 
++---Registers : 
+	               74 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     74 Bit        Muxes := 1     
+Module cdc_fifo_gray_dst 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     74 Bit        Muxes := 1     
+Module cdc_fifo_gray_src__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+Module spill_register__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module cdc_fifo_gray_dst__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module cdc_fifo_gray_src__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
++---Registers : 
+	               68 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+Module spill_register__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               68 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     68 Bit        Muxes := 1     
+Module cdc_fifo_gray_dst__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     68 Bit        Muxes := 1     
+Module serv_rf_ram_if 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module serv_rf_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---RAMs : 
+	               1K Bit         RAMs := 1     
+Module serv_csr 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 1     
+Module serv_state 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
+Module serv_decode 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+Module serv_bufreg 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module serv_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module serv_shift 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module serv_alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module serv_rf_if 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+Module serv_mem_if 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module serv_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module litedram_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 3     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 18    
+	   2 Input      4 Bit       Adders := 49    
+	   2 Input      3 Bit       Adders := 36    
+	   2 Input      2 Bit       Adders := 9     
+	   2 Input      1 Bit       Adders := 2     
++---Registers : 
+	               80 Bit    Registers := 1     
+	               74 Bit    Registers := 1     
+	               32 Bit    Registers := 13    
+	               27 Bit    Registers := 2     
+	               21 Bit    Registers := 8     
+	               16 Bit    Registers := 36    
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 13    
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 13    
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 20    
+	                4 Bit    Registers := 39    
+	                3 Bit    Registers := 51    
+	                2 Bit    Registers := 15    
+	                1 Bit    Registers := 140   
++---RAMs : 
+	              64K Bit         RAMs := 1     
+	               1K Bit         RAMs := 2     
+	              384 Bit         RAMs := 8     
+	              160 Bit         RAMs := 3     
+	              128 Bit         RAMs := 2     
+	               62 Bit         RAMs := 1     
+	               16 Bit         RAMs := 8     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 16    
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 8     
+	   2 Input     14 Bit        Muxes := 1     
+	   3 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 11    
+	   4 Input     13 Bit        Muxes := 2     
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   4 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 20    
+	   2 Input      3 Bit        Muxes := 15    
+	   6 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 17    
+	   6 Input      2 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 196   
+	  11 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 16    
+	   7 Input      1 Bit        Muxes := 104   
+Module litedram_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module bscan_tap 
+Detailed RTL Component Info : 
++---Registers : 
+	               41 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     41 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_4_reg' and it is trimmed from '10' to '8' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16750]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_2_reg' and it is trimmed from '10' to '8' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:16733]
+INFO: [Synth 8-5546] ROM "sdram_cmd_payload_a1" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design swerv_soc_axi_interconnect_0_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design serv_rf_top has unconnected port i_ibus_rdt[1]
+WARNING: [Synth 8-3331] design serv_rf_top has unconnected port i_ibus_rdt[0]
+WARNING: [Synth 8-3331] design rvfpga has unconnected port o_flash_cs_n
+WARNING: [Synth 8-3331] design rvfpga has unconnected port o_flash_mosi
+WARNING: [Synth 8-3331] design rvfpga has unconnected port o_accel_cs_n
+WARNING: [Synth 8-3331] design rvfpga has unconnected port o_accel_mosi
+WARNING: [Synth 8-3331] design rvfpga has unconnected port accel_sclk
+WARNING: [Synth 8-3331] design rvfpga has unconnected port i_flash_miso
+WARNING: [Synth 8-3331] design rvfpga has unconnected port i_accel_miso
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM rf_ram/memory_reg to conserve power
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_18_reg' and it is trimmed from '74' to '66' bits. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/LiteDRAM/litedram_core.v:18819]
+RAM Pipeline Warning: Read Address Register Found For RAM mem_1_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM mem_1_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM mem_1_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-3332] Sequential element (FDPE_4) is unused and will be removed from module litedram_core.
+WARNING: [Synth 8-3332] Sequential element (FDPE_5) is unused and will be removed from module litedram_core.
+WARNING: [Synth 8-3332] Sequential element (FDPE_6) is unused and will be removed from module litedram_core.
+WARNING: [Synth 8-3332] Sequential element (FDPE_7) is unused and will be removed from module litedram_core.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_subfragments_refresher_state_reg[0]) is unused and will be removed from module litedram_core.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_litedramcore_state_reg[0]) is unused and will be removed from module litedram_core.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /serv_rf_top/\cpu/csr/timer_irq_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /sdram_postponer_count_reg)
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/serv_rf_top/cpu/decode/o_rf_rs2_addr_reg[0]' (FDE) to 'ddr2/ldc/serv_rf_top/cpu/decode/op20_reg'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/serv_rf_top/cpu/decode/o_rf_rs2_addr_reg[1]' (FDE) to 'ddr2/ldc/serv_rf_top/cpu/decode/op21_reg'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/serv_rf_top/cpu/decode/o_rf_rs2_addr_reg[2]' (FDE) to 'ddr2/ldc/serv_rf_top/cpu/decode/op22_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /serv_rf_top/\cpu/state/irq_sync_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\litedramcore_interface1_bank_bus_dat_r_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\litedramcore_interface1_bank_bus_dat_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\read_ar_buffer_source_payload_size_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\write_aw_buffer_source_payload_size_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\litedramcore_interface1_bank_bus_dat_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_dqspattern_o1_reg[7] )
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/a7ddrphy_dqspattern_o1_reg[6]' (FD) to 'ddr2/ldc/a7ddrphy_dqspattern_o1_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_dqspattern_o1_reg[5] )
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/a7ddrphy_dqspattern_o1_reg[4]' (FD) to 'ddr2/ldc/a7ddrphy_dqspattern_o1_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_dqspattern_o1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_dqspattern_o1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\litedramcore_interface1_bank_bus_dat_r_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\litedramcore_interface1_bank_bus_dat_r_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\litedramcore_interface1_bank_bus_dat_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\litedramcore_interface1_bank_bus_dat_r_reg[6] )
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/a7ddrphy_bitslip0_r0_reg[14]' (FD) to 'ddr2/ldc/a7ddrphy_bitslip0_r0_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/a7ddrphy_bitslip0_r0_reg[12]' (FD) to 'ddr2/ldc/a7ddrphy_bitslip1_r0_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/a7ddrphy_bitslip0_r0_reg[10]' (FD) to 'ddr2/ldc/a7ddrphy_bitslip1_r0_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/a7ddrphy_bitslip0_r0_reg[8]' (FD) to 'ddr2/ldc/a7ddrphy_bitslip1_r0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/a7ddrphy_bitslip0_r0_reg[6]' (FD) to 'ddr2/ldc/a7ddrphy_bitslip0_r0_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/a7ddrphy_bitslip0_r0_reg[4]' (FD) to 'ddr2/ldc/a7ddrphy_bitslip0_r0_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/a7ddrphy_bitslip0_r0_reg[2]' (FD) to 'ddr2/ldc/a7ddrphy_bitslip1_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/a7ddrphy_bitslip1_r0_reg[14]' (FD) to 'ddr2/ldc/a7ddrphy_bitslip1_r0_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/a7ddrphy_bitslip1_r0_reg[12]' (FD) to 'ddr2/ldc/a7ddrphy_bitslip1_r0_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/a7ddrphy_bitslip1_r0_reg[6]' (FD) to 'ddr2/ldc/a7ddrphy_bitslip1_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/a7ddrphy_bitslip1_r0_reg[4]' (FD) to 'ddr2/ldc/a7ddrphy_bitslip1_r0_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip0_r2_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip0_r2_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip0_r2_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip0_r2_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip1_r2_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip1_r2_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip1_r2_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip1_r2_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip2_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip2_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip2_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip2_r0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip3_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip3_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip3_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip3_r0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip4_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip4_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip4_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip4_r0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip5_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip5_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip5_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip5_r0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip6_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip6_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip6_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip6_r0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip7_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip7_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip7_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip7_r0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip8_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip8_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip8_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip8_r0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip9_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip9_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip9_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip9_r0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip10_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip10_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip10_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip10_r0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip11_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip11_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip11_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip11_r0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip12_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip12_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip12_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip12_r0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip13_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip13_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip13_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip13_r0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip14_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip14_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip14_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip14_r0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip15_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip15_r0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip15_r0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip15_r0_reg[12] )
+INFO: [Synth 8-3886] merging instance 'cdc/i_axi_cdc/i_cdc_fifo_gray_r/i_src/gen_word[1].data_q_reg[1][0]' (FDE) to 'cdc/i_axi_cdc/i_cdc_fifo_gray_r/i_src/gen_word[1].data_q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'cdc/i_axi_cdc/i_cdc_fifo_gray_r/i_src/gen_word[1].data_q_reg[1][2]' (FDE) to 'cdc/i_axi_cdc/i_cdc_fifo_gray_r/i_src/gen_word[1].data_q_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'cdc/i_axi_cdc/i_cdc_fifo_gray_r/i_src/gen_word[0].data_q_reg[0][0]' (FDE) to 'cdc/i_axi_cdc/i_cdc_fifo_gray_r/i_src/gen_word[0].data_q_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'cdc/i_axi_cdc/i_cdc_fifo_gray_r/i_src/gen_word[0].data_q_reg[0][2]' (FDE) to 'cdc/i_axi_cdc/i_cdc_fifo_gray_r/i_src/gen_word[0].data_q_reg[0][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cdc/i_axi_cdc/i_cdc_fifo_gray_r/i_src/gen_word[1].data_q_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cdc/i_axi_cdc/i_cdc_fifo_gray_r/i_src/gen_word[0].data_q_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /sdram_sequencer_count_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_ba_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_ba_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_ba_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_a_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_a_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_a_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_a_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_a_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_a_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_a_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_a_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_a_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_a_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_a_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\sdram_cmd_payload_a_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip0_r1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr2/ldc /\a7ddrphy_bitslip0_r1_reg[14] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'cdc/i_axi_cdc/i_cdc_fifo_gray_r/i_dst/i_spill_register/gen_spill_reg.b_data_q_reg[2]' (FDCE) to 'cdc/i_axi_cdc/i_cdc_fifo_gray_r/i_dst/i_spill_register/gen_spill_reg.b_data_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_cmd_payload_we_reg' (FDR) to 'ddr2/ldc/sdram_cmd_payload_a_reg[10]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:48 . Memory (MB): peak = 1136.379 ; gain = 496.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+------------+---------------+----------------+
+|Module Name   | RTL Object | Depth x Width | Implemented As | 
++--------------+------------+---------------+----------------+
+|litedram_core | memdat_reg | 8192x32       | Block RAM      | 
++--------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++-----------------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name            | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\ddr2/ldc /serv_rf_top | rf_ram/memory_reg | 1 K x 2(READ_FIRST)    | W |   | 1 K x 2(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|\ddr2/ldc              | storage_10_reg    | 16 x 80(READ_FIRST)    | W |   | 16 x 80(WRITE_FIRST)   |   | R | Port A and B     | 1      | 1      | 
+|\ddr2/ldc              | storage_13_reg    | 16 x 66(READ_FIRST)    | W |   | 16 x 66(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|\ddr2/ldc              | mem_1_reg         | 2 K x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 2      | 
++-----------------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+---------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives  | 
++------------+---------------------+-----------+----------------------+-------------+
+|\ddr2/ldc   | data_mem_grain6_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | tag_mem_reg         | Implied   | 2 x 31               | RAM32M x 6	 | 
+|\ddr2/ldc   | storage_2_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_3_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_4_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_5_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_6_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_7_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_8_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_9_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_1_reg       | Implied   | 16 x 8               | RAM32M x 2	 | 
+|\ddr2/ldc   | storage_11_reg      | Implied   | 16 x 6               | RAM32M x 1	 | 
+|\ddr2/ldc   | storage_12_reg      | Implied   | 16 x 6               | RAM32M x 2	 | 
+|\ddr2/ldc   | storage_14_reg      | Implied   | 16 x 8               | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain0_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain1_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain2_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain3_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain4_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain5_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain7_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
++------------+---------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 8 of D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.xdc. [D:/destop/Interface_lab_src/RVfpga_SoC-lab1/lab_src/rtl_src/rvfpga.xdc:8]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1136.379 ; gain = 496.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1136.379 ; gain = 496.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++-----------------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name            | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\ddr2/ldc /serv_rf_top | rf_ram/memory_reg | 1 K x 2(READ_FIRST)    | W |   | 1 K x 2(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|\ddr2/ldc              | storage_10_reg    | 16 x 80(READ_FIRST)    | W |   | 16 x 80(WRITE_FIRST)   |   | R | Port A and B     | 1      | 1      | 
+|\ddr2/ldc              | storage_13_reg    | 16 x 66(READ_FIRST)    | W |   | 16 x 66(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|\ddr2/ldc              | mem_1_reg         | 2 K x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 2      | 
++-----------------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++------------+---------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives  | 
++------------+---------------------+-----------+----------------------+-------------+
+|\ddr2/ldc   | data_mem_grain6_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | tag_mem_reg         | Implied   | 2 x 31               | RAM32M x 6	 | 
+|\ddr2/ldc   | storage_2_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_3_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_4_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_5_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_6_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_7_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_8_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_9_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_1_reg       | Implied   | 16 x 8               | RAM32M x 2	 | 
+|\ddr2/ldc   | storage_11_reg      | Implied   | 16 x 6               | RAM32M x 1	 | 
+|\ddr2/ldc   | storage_12_reg      | Implied   | 16 x 6               | RAM32M x 2	 | 
+|\ddr2/ldc   | storage_14_reg      | Implied   | 16 x 8               | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain0_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain1_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain2_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain3_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain4_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain5_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain7_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
++------------+---------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/uart_rx_fifo_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/uart_rx_fifo_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/uart_rx_fifo_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/uart_rx_fifo_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/uart_rx_fifo_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/uart_rx_fifo_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/uart_rx_fifo_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/uart_rx_fifo_consume_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/write_id_buffer_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/write_id_buffer_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/write_id_buffer_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/write_id_buffer_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/write_id_buffer_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/write_id_buffer_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/write_id_buffer_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/write_id_buffer_consume_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/read_id_buffer_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/read_id_buffer_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/read_id_buffer_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/read_id_buffer_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/read_id_buffer_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/read_id_buffer_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/read_id_buffer_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/read_id_buffer_consume_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/read_r_buffer_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/read_r_buffer_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/read_r_buffer_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/read_r_buffer_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/read_r_buffer_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/read_r_buffer_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/read_r_buffer_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/read_r_buffer_consume_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/write_resp_buffer_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/write_resp_buffer_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/write_resp_buffer_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/write_resp_buffer_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/write_resp_buffer_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/write_resp_buffer_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/write_resp_buffer_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/write_resp_buffer_consume_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine7_cmd_buffer_lookahead_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/sdram_bankmachine7_cmd_buffer_lookahead_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine7_cmd_buffer_lookahead_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/sdram_bankmachine7_cmd_buffer_lookahead_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine7_cmd_buffer_lookahead_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/sdram_bankmachine7_cmd_buffer_lookahead_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine7_cmd_buffer_lookahead_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/sdram_bankmachine7_cmd_buffer_lookahead_consume_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine6_cmd_buffer_lookahead_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/sdram_bankmachine6_cmd_buffer_lookahead_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine6_cmd_buffer_lookahead_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/sdram_bankmachine6_cmd_buffer_lookahead_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine6_cmd_buffer_lookahead_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/sdram_bankmachine6_cmd_buffer_lookahead_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine6_cmd_buffer_lookahead_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/sdram_bankmachine6_cmd_buffer_lookahead_consume_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine5_cmd_buffer_lookahead_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/sdram_bankmachine5_cmd_buffer_lookahead_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine5_cmd_buffer_lookahead_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/sdram_bankmachine5_cmd_buffer_lookahead_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine5_cmd_buffer_lookahead_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/sdram_bankmachine5_cmd_buffer_lookahead_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine5_cmd_buffer_lookahead_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/sdram_bankmachine5_cmd_buffer_lookahead_consume_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine4_cmd_buffer_lookahead_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/sdram_bankmachine4_cmd_buffer_lookahead_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine4_cmd_buffer_lookahead_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/sdram_bankmachine4_cmd_buffer_lookahead_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine4_cmd_buffer_lookahead_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/sdram_bankmachine4_cmd_buffer_lookahead_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine4_cmd_buffer_lookahead_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/sdram_bankmachine4_cmd_buffer_lookahead_consume_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine3_cmd_buffer_lookahead_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/sdram_bankmachine3_cmd_buffer_lookahead_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine3_cmd_buffer_lookahead_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/sdram_bankmachine3_cmd_buffer_lookahead_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine3_cmd_buffer_lookahead_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/sdram_bankmachine3_cmd_buffer_lookahead_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine3_cmd_buffer_lookahead_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/sdram_bankmachine3_cmd_buffer_lookahead_consume_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine2_cmd_buffer_lookahead_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/sdram_bankmachine2_cmd_buffer_lookahead_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine2_cmd_buffer_lookahead_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/sdram_bankmachine2_cmd_buffer_lookahead_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine2_cmd_buffer_lookahead_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/sdram_bankmachine2_cmd_buffer_lookahead_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine2_cmd_buffer_lookahead_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/sdram_bankmachine2_cmd_buffer_lookahead_consume_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine1_cmd_buffer_lookahead_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/sdram_bankmachine1_cmd_buffer_lookahead_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine1_cmd_buffer_lookahead_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/sdram_bankmachine1_cmd_buffer_lookahead_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine1_cmd_buffer_lookahead_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/sdram_bankmachine1_cmd_buffer_lookahead_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine1_cmd_buffer_lookahead_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/sdram_bankmachine1_cmd_buffer_lookahead_consume_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine0_cmd_buffer_lookahead_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/sdram_bankmachine0_cmd_buffer_lookahead_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine0_cmd_buffer_lookahead_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/sdram_bankmachine0_cmd_buffer_lookahead_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine0_cmd_buffer_lookahead_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/sdram_bankmachine0_cmd_buffer_lookahead_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/sdram_bankmachine0_cmd_buffer_lookahead_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/sdram_bankmachine0_cmd_buffer_lookahead_consume_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/write_w_buffer_consume_reg_rep[3]' (FDRE) to 'ddr2/ldc/write_w_buffer_consume_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/write_w_buffer_consume_reg_rep[2]' (FDRE) to 'ddr2/ldc/write_w_buffer_consume_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/write_w_buffer_consume_reg_rep[0]' (FDRE) to 'ddr2/ldc/write_w_buffer_consume_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr2/ldc/write_w_buffer_consume_reg_rep[1]' (FDRE) to 'ddr2/ldc/write_w_buffer_consume_reg[1]'
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/serv_rf_top/rf_ram/memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/storage_10_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/storage_10_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/storage_13_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/mem_1_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/mem_1_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/memdat_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/memdat_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/memdat_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/memdat_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/memdat_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/memdat_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/memdat_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ddr2/ldc/memdat_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 1172.176 ; gain = 532.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:01 . Memory (MB): peak = 1176.023 ; gain = 536.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:01 . Memory (MB): peak = 1176.023 ; gain = 536.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1176.023 ; gain = 536.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1176.023 ; gain = 536.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 1176.164 ; gain = 536.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 1176.164 ; gain = 536.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|rvfpga      | ddr2/ldc/subfragments_new_master_rdata_valid8_reg  | 9      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|rvfpga      | ddr2/ldc/subfragments_new_master_rdata_valid17_reg | 9      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|rvfpga      | ddr2/ldc/a7ddrphy_rddata_en_tappeddelayline7_reg   | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|rvfpga      | tap/dmi_reg[17]                                    | 15     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|rvfpga      | tap/dmi_reg[7]                                     | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------+----------+
+|      |BlackBox name                       |Instances |
++------+------------------------------------+----------+
+|1     |swerv_soc_xbar_0                    |         1|
+|2     |swerv_soc_auto_ds_0                 |         1|
+|3     |swerv_soc_auto_pc_0                 |         1|
+|4     |swerv_soc_PWM_w_Int_0_1             |         1|
+|5     |swerv_soc_Sen_Seg_Display_0_2       |         1|
+|6     |swerv_soc_axi2wb_intcon_wrapper_0_0 |         1|
+|7     |swerv_soc_axi_gpio_0_0              |         1|
+|8     |swerv_soc_bootrom_wrapper_0_0       |         1|
+|9     |swerv_soc_swerv_wrapper_verilog_0_0 |         1|
+|10    |swerv_soc_syscon_wrapper_0_0        |         1|
+|11    |swerv_soc_wb_gpio_wrapper_0_0       |         1|
+|12    |swerv_soc_wb_uart_wrapper_0_0       |         1|
++------+------------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------+------+
+|      |Cell                                |Count |
++------+------------------------------------+------+
+|1     |swerv_soc_PWM_w_Int_0_1             |     1|
+|2     |swerv_soc_Sen_Seg_Display_0_2       |     1|
+|3     |swerv_soc_auto_ds_0                 |     1|
+|4     |swerv_soc_auto_pc_0                 |     1|
+|5     |swerv_soc_axi2wb_intcon_wrapper_0_0 |     1|
+|6     |swerv_soc_axi_gpio_0_0              |     1|
+|7     |swerv_soc_bootrom_wrapper_0_0       |     1|
+|8     |swerv_soc_swerv_wrapper_verilog_0_0 |     1|
+|9     |swerv_soc_syscon_wrapper_0_0        |     1|
+|10    |swerv_soc_wb_gpio_wrapper_0_0       |     1|
+|11    |swerv_soc_wb_uart_wrapper_0_0       |     1|
+|12    |swerv_soc_xbar_0                    |     1|
+|13    |BSCANE2                             |     3|
+|14    |BUFG                                |     7|
+|15    |CARRY4                              |    96|
+|16    |IDELAYCTRL                          |     1|
+|17    |IDELAYE2                            |    16|
+|18    |ISERDESE2                           |    16|
+|19    |LUT1                                |   158|
+|20    |LUT2                                |   410|
+|21    |LUT3                                |   588|
+|22    |LUT4                                |   661|
+|23    |LUT5                                |   616|
+|24    |LUT6                                |  1245|
+|25    |MUXF7                               |    99|
+|26    |MUXF8                               |     3|
+|27    |OSERDESE2                           |    44|
+|28    |PLLE2_ADV                           |     1|
+|29    |PLLE2_BASE                          |     1|
+|30    |RAM32M                              |    61|
+|31    |RAMB18E1                            |     1|
+|32    |RAMB18E1_1                          |     1|
+|33    |RAMB36E1                            |     2|
+|34    |RAMB36E1_1                          |     2|
+|35    |RAMB36E1_2                          |     1|
+|36    |RAMB36E1_3                          |     1|
+|37    |RAMB36E1_4                          |     1|
+|38    |RAMB36E1_5                          |     1|
+|39    |RAMB36E1_6                          |     1|
+|40    |RAMB36E1_7                          |     1|
+|41    |RAMB36E1_8                          |     1|
+|42    |RAMB36E1_9                          |     1|
+|43    |SRL16E                              |     5|
+|44    |STARTUPE2                           |     1|
+|45    |FD                                  |     8|
+|46    |FDCE                                |   564|
+|47    |FDPE                                |     4|
+|48    |FDRE                                |  2549|
+|49    |FDSE                                |   190|
+|50    |IBUF                                |    19|
+|51    |IOBUF                               |    16|
+|52    |IOBUFDS                             |     2|
+|53    |OBUF                                |    58|
+|54    |OBUFDS                              |     1|
+|55    |OBUFT                               |     5|
++------+------------------------------------+------+
+
+Report Instance Areas: 
++------+-------------------------------+----------------------------------+------+
+|      |Instance                       |Module                            |Cells |
++------+-------------------------------+----------------------------------+------+
+|1     |top                            |                                  | 10359|
+|2     |  cdc                          |axi_cdc_intf                      |  1586|
+|3     |    i_axi_cdc                  |axi_cdc                           |  1586|
+|4     |      i_cdc_fifo_gray_ar       |cdc_fifo_gray__parameterized1     |   299|
+|5     |        i_dst                  |cdc_fifo_gray_dst__parameterized1 |   196|
+|6     |          \gen_sync[0].i_sync  |sync_25                           |     2|
+|7     |          \gen_sync[1].i_sync  |sync_26                           |     2|
+|8     |          i_spill_register     |spill_register__parameterized1    |   143|
+|9     |        i_src                  |cdc_fifo_gray_src__parameterized1 |   103|
+|10    |          \gen_sync[0].i_sync  |sync_23                           |     5|
+|11    |          \gen_sync[1].i_sync  |sync_24                           |     2|
+|12    |      i_cdc_fifo_gray_aw       |cdc_fifo_gray                     |   299|
+|13    |        i_dst                  |cdc_fifo_gray_dst_16              |   196|
+|14    |          \gen_sync[0].i_sync  |sync_20                           |     2|
+|15    |          \gen_sync[1].i_sync  |sync_21                           |     2|
+|16    |          i_spill_register     |spill_register_22                 |   143|
+|17    |        i_src                  |cdc_fifo_gray_src_17              |   103|
+|18    |          \gen_sync[0].i_sync  |sync_18                           |     5|
+|19    |          \gen_sync[1].i_sync  |sync_19                           |     2|
+|20    |      i_cdc_fifo_gray_b        |cdc_fifo_gray__parameterized0     |    73|
+|21    |        i_dst                  |cdc_fifo_gray_dst__parameterized0 |    46|
+|22    |          \gen_sync[0].i_sync  |sync_14                           |     2|
+|23    |          \gen_sync[1].i_sync  |sync_15                           |     2|
+|24    |          i_spill_register     |spill_register__parameterized0    |    31|
+|25    |        i_src                  |cdc_fifo_gray_src__parameterized0 |    27|
+|26    |          \gen_sync[0].i_sync  |sync_12                           |     2|
+|27    |          \gen_sync[1].i_sync  |sync_13                           |     5|
+|28    |      i_cdc_fifo_gray_r        |cdc_fifo_gray_0                   |   453|
+|29    |        i_dst                  |cdc_fifo_gray_dst_5               |   227|
+|30    |          \gen_sync[0].i_sync  |sync_9                            |     2|
+|31    |          \gen_sync[1].i_sync  |sync_10                           |     2|
+|32    |          i_spill_register     |spill_register_11                 |   220|
+|33    |        i_src                  |cdc_fifo_gray_src_6               |   226|
+|34    |          \gen_sync[0].i_sync  |sync_7                            |     6|
+|35    |          \gen_sync[1].i_sync  |sync_8                            |     3|
+|36    |      i_cdc_fifo_gray_w        |cdc_fifo_gray_1                   |   462|
+|37    |        i_dst                  |cdc_fifo_gray_dst                 |   232|
+|38    |          \gen_sync[0].i_sync  |sync_3                            |     2|
+|39    |          \gen_sync[1].i_sync  |sync_4                            |     2|
+|40    |          i_spill_register     |spill_register                    |   225|
+|41    |        i_src                  |cdc_fifo_gray_src                 |   230|
+|42    |          \gen_sync[0].i_sync  |sync                              |     5|
+|43    |          \gen_sync[1].i_sync  |sync_2                            |     2|
+|44    |  clk_gen                      |clk_gen_nexys                     |     5|
+|45    |  ddr2                         |litedram_top                      |  5620|
+|46    |    ldc                        |litedram_core                     |  5587|
+|47    |      serv_rf_top              |serv_rf_top                       |   710|
+|48    |        cpu                    |serv_top                          |   663|
+|49    |          alu                  |serv_alu                          |    30|
+|50    |            shift              |serv_shift                        |    17|
+|51    |          bufreg               |serv_bufreg                       |   121|
+|52    |          csr                  |serv_csr                          |    11|
+|53    |          ctrl                 |serv_ctrl                         |    42|
+|54    |          decode               |serv_decode                       |   202|
+|55    |          mem_if               |serv_mem_if                       |   208|
+|56    |          state                |serv_state                        |    49|
+|57    |        rf_ram                 |serv_rf_ram                       |     1|
+|58    |        rf_ram_if              |serv_rf_ram_if                    |    46|
+|59    |  swervolf                     |swerv_soc_wrapper                 |  2897|
+|60    |    swerv_soc_i                |swerv_soc                         |  2897|
+|61    |      axi_interconnect_0       |swerv_soc_axi_interconnect_0_0    |   777|
+|62    |        s00_couplers           |s00_couplers_imp_RRH9HC           |   403|
+|63    |  tap                          |bscan_tap                         |   165|
++------+-------------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 1176.164 ; gain = 536.723
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 1176.164 ; gain = 417.051
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 1176.164 ; gain = 536.723
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.144 . Memory (MB): peak = 1184.312 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 335 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 34 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1186.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 89 instances were transformed.
+  FD => FDRE: 8 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 61 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+429 Infos, 257 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1186.914 ; gain = 848.551
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1186.914 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/destop/Interface_lab/lab5/lab1.runs/synth_1/rvfpga.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rvfpga_utilization_synth.rpt -pb rvfpga_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  2 22:41:22 2023...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov  2 22:41:29 2023
+# Process ID: 15664
+# Current directory: D:/destop/Interface_lab/lab5/lab1.runs/impl_1
+# Command line: vivado.exe -log rvfpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rvfpga.tcl -notrace
+# Log file: D:/destop/Interface_lab/lab5/lab1.runs/impl_1/rvfpga.vdi
+# Journal file: D:/destop/Interface_lab/lab5/lab1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source rvfpga.tcl -notrace

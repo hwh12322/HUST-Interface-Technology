@@ -1,0 +1,289 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Nov 21 02:38:49 2023
+| Host         : shiratama running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_My_PWM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of swerv_soc_My_PWM_0_0 (xilinx.com:user:My_PWM:2.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Nov 21 02:36:17 2023
+| Host         : shiratama running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_My_PWM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of swerv_soc_My_PWM_0_0 (xilinx.com:user:My_PWM:2.0) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Nov 21 01:29:05 2023
+| Host         : shiratama running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_My_PWM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of swerv_soc_My_PWM_0_0 (xilinx.com:user:My_PWM:2.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Nov 20 23:48:16 2023
+| Host         : shiratama running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_My_PWM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of swerv_soc_My_PWM_0_0 (xilinx.com:user:My_PWM:2.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Nov 20 22:59:30 2023
+| Host         : shiratama running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_My_PWM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of swerv_soc_My_PWM_0_0 (xilinx.com:user:My_PWM:2.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Nov 20 22:07:55 2023
+| Host         : shiratama running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_axi_iic_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of swerv_soc_axi_iic_0_0 (xilinx.com:ip:axi_iic:2.0 (Rev. 23)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Nov 20 22:07:55 2023
+| Host         : shiratama running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of swerv_soc_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 22)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Nov 20 22:07:55 2023
+| Host         : shiratama running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_My_PWM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of swerv_soc_My_PWM_0_0 from xilinx.com:user:My_PWM:1.0 (Rev. 5) to xilinx.com:user:My_PWM:2.0 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Apr 20 10:51:04 2022
+| Host         : MPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_My_PWM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of swerv_soc_My_PWM_0_0 (xilinx.com:user:My_PWM:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Apr 19 22:36:32 2022
+| Host         : MPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_My_PWM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of swerv_soc_My_PWM_0_0 (xilinx.com:user:My_PWM:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Apr 19 21:45:51 2022
+| Host         : MPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_My_PWM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of swerv_soc_My_PWM_0_0 (xilinx.com:user:My_PWM:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Apr  5 09:49:01 2022
+| Host         : MPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_segment_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of swerv_soc_segment_0_1 (xilinx.com:user:segment:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Apr  5 00:20:38 2022
+| Host         : MPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_segment_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of swerv_soc_segment_0_1 (xilinx.com:user:segment:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Apr  4 23:38:08 2022
+| Host         : MPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_segment_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of swerv_soc_segment_0_1 (xilinx.com:user:segment:1.0) from (Rev. 2) to (Rev. 3)
+

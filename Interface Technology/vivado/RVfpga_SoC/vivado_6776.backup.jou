@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov 21 02:34:24 2023
+# Process ID: 6776
+# Current directory: D:/destop/vivado/RVfpga_SoC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent42028 D:\destop\vivado\RVfpga_SoC\RVfpga_SoC.xpr
+# Log file: D:/destop/vivado/RVfpga_SoC/vivado.log
+# Journal file: D:/destop/vivado/RVfpga_SoC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.xpr
+open_bd_design {D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd}
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name My_PWM_v2_0_project -directory D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.tmp/My_PWM_v2_0_project d:/destop/vivado/ip/My_PWM_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project RVfpga_SoC
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project My_PWM_v2_0_project
+current_project RVfpga_SoC
+upgrade_ip -vlnv xilinx.com:user:My_PWM:2.0 [get_ips  swerv_soc_My_PWM_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips swerv_soc_My_PWM_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+catch { config_ip_cache -export [get_ips -all swerv_soc_My_PWM_0_0] }
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+launch_runs  swerv_soc_My_PWM_0_0_synth_1
+export_simulation -of_objects [get_files D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -directory D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.ip_user_files/sim_scripts -ip_user_files_dir D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.ip_user_files -ipstatic_source_dir D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.cache/compile_simlib/modelsim} {questa=D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.cache/compile_simlib/questa} {riviera=D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.cache/compile_simlib/riviera} {activehdl=D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+current_project My_PWM_v2_0_project
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project RVfpga_SoC
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project My_PWM_v2_0_project
+current_project RVfpga_SoC
+upgrade_ip -vlnv xilinx.com:user:My_PWM:2.0 [get_ips  swerv_soc_My_PWM_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips swerv_soc_My_PWM_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+catch { config_ip_cache -export [get_ips -all swerv_soc_My_PWM_0_0] }
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+launch_runs  swerv_soc_My_PWM_0_0_synth_1
+export_simulation -of_objects [get_files D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -directory D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.ip_user_files/sim_scripts -ip_user_files_dir D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.ip_user_files -ipstatic_source_dir D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.cache/compile_simlib/modelsim} {questa=D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.cache/compile_simlib/questa} {riviera=D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.cache/compile_simlib/riviera} {activehdl=D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+current_project My_PWM_v2_0_project
+launch_simulation
+close_project
+ipx::edit_ip_in_project -upgrade true -name PWM_w_Int_v1_0_project -directory D:/destop/vivado/RVfpga_SoC/RVfpga_SoC.tmp/PWM_w_Int_v1_0_project d:/destop/vivado/ip/PWM_w_Int_1.0/component.xml
+update_compile_order -fileset sources_1
+close_project

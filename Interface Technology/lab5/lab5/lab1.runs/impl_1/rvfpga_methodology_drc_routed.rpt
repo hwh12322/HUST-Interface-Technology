@@ -1,0 +1,1057 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Nov  2 22:48:56 2023
+| Host         : shiratama running 64-bit major release  (build 9200)
+| Command      : report_methodology -file rvfpga_methodology_drc_routed.rpt -pb rvfpga_methodology_drc_routed.pb -rpx rvfpga_methodology_drc_routed.rpx
+| Design       : rvfpga
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 203
++-----------+------------------+------------------------------------------------+------------+
+| Rule      | Severity         | Description                                    | Violations |
++-----------+------------------+------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks | 2          |
+| TIMING-7  | Critical Warning | No common node between related clocks          | 2          |
+| DPIR-1    | Warning          | Asynchronous driver check                      | 152        |
+| LUTAR-1   | Warning          | LUT drives async reset alert                   | 7          |
+| SYNTH-6   | Warning          | Timing of a block RAM might be sub-optimal     | 1          |
+| TIMING-9  | Warning          | Unknown CDC Logic                              | 1          |
+| TIMING-18 | Warning          | Missing input or output delay                  | 22         |
+| REQP-1959 | Advisory         | connects_SERDES_RST_driver_not_FF              | 16         |
++-----------+------------------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_core and tck_dtmcs are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_core] -to [get_clocks tck_dtmcs]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks tck_dtmcs and clk_core are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks tck_dtmcs] -to [get_clocks clk_core]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks clk_core and tck_dtmcs are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_core] -to [get_clocks tck_dtmcs]
+Related violations: <none>
+
+TIMING-7#2 Critical Warning
+No common node between related clocks  
+The clocks tck_dtmcs and clk_core are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks tck_dtmcs] -to [get_clocks clk_core]
+Related violations: <none>
+
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#18 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#19 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#20 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#21 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#22 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#23 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#24 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#25 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#26 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#27 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#28 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#29 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#30 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#31 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#32 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#33 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#34 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#35 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#36 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#37 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#38 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#39 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#40 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#41 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#42 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#43 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#44 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#45 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#46 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#47 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#48 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#49 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#50 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#51 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#52 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#53 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#54 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#55 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#56 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#57 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#58 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#59 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#60 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#61 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#62 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#63 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#64 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#65 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#66 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#67 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#68 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#69 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__0/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#70 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#71 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#72 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#73 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#74 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#75 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#76 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#77 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#78 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#79 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#80 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#81 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#82 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#83 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#84 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#85 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#86 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#87 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#88 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#89 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#90 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#91 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#92 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#93 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#94 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#95 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#96 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#97 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#98 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#99 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#100 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#101 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#102 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#103 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#104 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__1/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#105 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#106 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#107 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#108 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#109 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#110 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#111 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#112 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#113 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#114 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#115 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#116 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#117 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#118 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#119 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#120 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#121 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#122 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#123 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#124 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#125 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#126 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#127 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#128 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#129 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#130 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#131 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#132 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#133 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#134 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#135 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#136 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#137 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#138 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#139 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#140 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#141 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#142 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#143 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#144 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#145 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#146 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#147 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#148 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#149 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#150 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#151 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#152 Warning
+Asynchronous driver check  
+DSP swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2 input pin swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/exu/mul_e1/prod_e2__2/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell ddr2/ldc/OSERDESE2_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ddr2/ldc/ISERDESE2/RST, ddr2/ldc/ISERDESE2_1/RST, ddr2/ldc/ISERDESE2_10/RST, ddr2/ldc/ISERDESE2_11/RST, ddr2/ldc/ISERDESE2_12/RST, ddr2/ldc/ISERDESE2_13/RST, ddr2/ldc/ISERDESE2_14/RST, ddr2/ldc/ISERDESE2_15/RST, ddr2/ldc/ISERDESE2_2/RST, ddr2/ldc/ISERDESE2_3/RST, ddr2/ldc/ISERDESE2_4/RST, ddr2/ldc/ISERDESE2_5/RST, ddr2/ldc/ISERDESE2_6/RST, ddr2/ldc/ISERDESE2_7/RST, ddr2/ldc/ISERDESE2_8/RST (the first 15 of 16 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gc0.count_d1[4]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gc0.count_d1[4]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gc0.count_d1[4]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR, swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dmcontrol_dmactive_ff/dffs/dout[31]_i_2__121, with 2 or more inputs, drives asynchronous preset/clear pin(s) swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[0]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[10]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[11]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[12]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[13]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[14]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[15]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[16]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[17]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[18]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[19]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[1]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[20]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[21]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dbg_sbaddress0_reg/genblock.dff/dffs/dout_reg[22]/CLR (the first 15 of 258 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dmcontrolff/dffs/dout[0]_i_2__166, with 2 or more inputs, drives asynchronous preset/clear pin(s) swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[1].NON_ZERO_INT.config_gw_inst/int_pend_ff/dout_reg[0]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[1].NON_ZERO_INT.intpriority_ff/dffs/dout_reg[0]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[1].NON_ZERO_INT.intpriority_ff/dffs/dout_reg[1]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[1].NON_ZERO_INT.intpriority_ff/dffs/dout_reg[2]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[1].NON_ZERO_INT.intpriority_ff/dffs/dout_reg[3]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[2].NON_ZERO_INT.config_gw_inst/int_pend_ff/dout_reg[0]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[2].NON_ZERO_INT.intpriority_ff/dffs/dout_reg[0]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[2].NON_ZERO_INT.intpriority_ff/dffs/dout_reg[1]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[2].NON_ZERO_INT.intpriority_ff/dffs/dout_reg[2]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[2].NON_ZERO_INT.intpriority_ff/dffs/dout_reg[3]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[3].NON_ZERO_INT.config_gw_inst/int_pend_ff/dout_reg[0]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[4].NON_ZERO_INT.config_gw_inst/int_pend_ff/dout_reg[0]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[4].NON_ZERO_INT.intpriority_ff/dffs/dout_reg[0]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[4].NON_ZERO_INT.intpriority_ff/dffs/dout_reg[1]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/SETREG[4].NON_ZERO_INT.intpriority_ff/dffs/dout_reg[2]/CLR (the first 15 of 3823 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dmcontrolff/dffs/dout[2]_i_3__79, with 2 or more inputs, drives asynchronous preset/clear pin(s) swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/rd_addr_hi_ff/dffs/dout_reg[0]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/rd_addr_hi_ff/dffs/dout_reg[1]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/rd_addr_hi_ff/dffs/dout_reg[2]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/rd_addr_lo_ff/dffs/dout_reg[0]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/rd_addr_lo_ff/dffs/dout_reg[1]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/rd_addr_lo_ff/dffs/dout_reg[2]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/dccm_rd_data_hiff/genblock.dff/dffs/dout_reg[0]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/dccm_rd_data_hiff/genblock.dff/dffs/dout_reg[10]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/dccm_rd_data_hiff/genblock.dff/dffs/dout_reg[11]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/dccm_rd_data_hiff/genblock.dff/dffs/dout_reg[12]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/dccm_rd_data_hiff/genblock.dff/dffs/dout_reg[13]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/dccm_rd_data_hiff/genblock.dff/dffs/dout_reg[14]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/dccm_rd_data_hiff/genblock.dff/dffs/dout_reg[15]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/dccm_rd_data_hiff/genblock.dff/dffs/dout_reg[16]/CLR, swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/mem/Gen_dccm_enable.dccm/dccm_rd_data_hiff/genblock.dff/dffs/dout_reg[17]/CLR (the first 15 of 9059 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance ddr2/ldc/storage_10_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[10] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[11] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[12] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[13] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[14] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[15] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[8] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dq[9] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dqs_n[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dqs_n[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dqs_p[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An input delay is missing on ddram_dqs_p[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An input delay is missing on i_uart_rx relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An input delay is missing on rstn relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_10: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#3 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_11: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#4 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_12: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#5 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_13: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#6 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_14: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#7 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_15: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#8 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_1: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#9 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_2: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#10 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_3: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#11 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_4: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#12 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_5: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#13 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_6: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#14 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_7: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#15 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_8: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#16 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr2/ldc/ISERDESE2_9: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+
